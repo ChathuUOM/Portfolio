@@ -1,0 +1,151 @@
+@mixin typo($font-family, $font-size, $font-weight, $line-height, $letter-spacing) {
+    font-family   : $font-family !important;
+    font-size     : $font-size !important;
+    font-weight   : $font-weight !important;
+    line-height   : $line-height !important;
+    letter-spacing: $letter-spacing !important;
+}
+
+%commonTypo {
+    font-stretch: normal;
+    font-style  : normal;
+}
+
+.headline1 {
+    @extend %commonTypo;
+    @include typo("Roboto", 96px, 300, normal, -1.5px);
+}
+
+.headline2 {
+    @extend %commonTypo;
+    @include typo("Roboto", 60px, 300, normal, -0.5px);
+}
+
+.headline3 {
+    @extend %commonTypo;
+    @include typo("Roboto", 48px, normal, normal, normal);
+}
+
+.headline4 {
+    @extend %commonTypo;
+    @include typo("Roboto", 34px, normal, normal, 0.25px);
+}
+
+.headline5 {
+    @extend %commonTypo;
+    @include typo("Roboto", 24px, normal, normal, normal);
+}
+
+.headline6 {
+    @extend %commonTypo;
+    @include typo("Roboto", 20px, 500, normal, 0.15px);
+}
+
+.body1 {
+    @extend %commonTypo;
+    @include typo("Roboto", 14px, normal, 2, 0.15px);
+}
+
+.body2 {
+    @extend %commonTypo;
+    @include typo("Roboto", 12px, normal, 1.67, 0.15px);
+}
+
+.subtitle1 {
+    @extend %commonTypo;
+    @include typo("Roboto", 16px, normal, 1.75, 0.15px);
+}
+
+.subtitle2 {
+    @extend %commonTypo;
+    @include typo("Roboto", 14px, 500, 1.71, 0.1px);
+}
+
+.button-typo {
+    @extend %commonTypo;
+    @include typo("Roboto", 18px, 500, 1.14px, 1.25px);
+    // text-transform: uppercase !important;
+}
+
+.caption-typo {
+    @extend %commonTypo;
+    @include typo("Roboto", 12px, normal, 1.33, 0.4px);
+}
+
+.overline-typo {
+    @extend %commonTypo;
+    @include typo("Roboto", 10px, 500, 1.33, 1.5px);
+    text-transform: capitalize;
+}
+
+.link-typo {
+    @extend %commonTypo;
+    @include typo("Roboto", 14px, normal, 2, -0.5px);
+    text-decoration: underline !important;
+    cursor         : pointer;
+}
+
+.error-typo {
+    @extend %commonTypo;
+    @include typo("Roboto", 14px, normal, 2, -0.5px);
+}
+
+.warning-typo {
+    @extend %commonTypo;
+    @include typo("Roboto", 14px, normal, 2, -0.5px);
+}
+
+.success-typo {
+    @extend %commonTypo;
+    @include typo("Roboto", 14px, normal, 2, -0.5px);
+}
+
+.headline1-pri {
+    @extend .headline1;
+    color: $primary;
+}
+
+.headline2-pri {
+    @extend .headline2;
+    color: $primary;
+}
+
+.headline3-pri {
+    @extend .headline3;
+    color: $primary;
+}
+
+.headline4-pri {
+    @extend .headline4;
+    color: $primary;
+}
+
+.headline5-pri {
+    @extend .headline5;
+    color: $primary;
+}
+
+.headline6-pri {
+    @extend .headline6;
+    color: $primary;
+}
+
+.body1-pri {
+    @extend .body1;
+    color: $primary;
+}
+
+.body2-pri {
+    @extend .body2;
+    color: $primary;
+}
+
+.subtitle1-pri {
+    @extend .subtitle1;
+    color: $primary;
+}
+
+.subtitle2-pri {
+    @extend .subtitle2;
+    color: $primary;
+}

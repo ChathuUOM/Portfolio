@@ -1,0 +1,37 @@
+/* Import Global Style Files */
+
+
+/* SETTINGS Files */
+@import './settings/base-settings/color.settings';
+@import './settings/base-settings/font.settings';
+@import './settings/base-settings/global.settings';
+
+/* TOOLS Files */
+@import './tools/mixins/display-grid.mixins';
+@import './tools/mixins/display-flex.mixins';
+@import './tools/mixins/scroll-bar.mixins';
+
+/* GENERIC Files */
+@import './generic/reset.generic';
+
+/* ELEMENTS Files */
+@import './elements/typography.elements';
+
+/* OBJECTS Files */
+
+/* COMPONENTS Files */
+@import 'components/buttons/button';
+@import 'components/timeline/timeline';
+@import 'components/testomonials/testomonials';
+
+/* PAGES Files */
+@import 'pages/common';
+
+/* UTILITIES Files */
+@import './utilities/typo.utils';
+@import './utilities/spacing.utils';
+@import './utilities/helper.utils';
+@import './utilities/grid.utils';
+@import './utilities/position.utils';
+@import './utilities/display.utils';
+@import './utilities/scroll-bar.utils';

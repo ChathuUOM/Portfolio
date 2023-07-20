@@ -1,0 +1,64 @@
+/* Box Button Styling */
+
+@mixin a-box-button($bg-color, $color) {
+  background-color: $bg-color !important;
+  color           : $color !important;
+  border          : 1px solid $color;
+}
+
+.contact-btn {
+  @include a-box-button(transparent, $primary);
+  @extend .button-typo;
+  border-radius: 4px;
+  box-shadow   : $shadow-10;
+  padding      : 20px !important;
+  margin-right : 10px;
+  cursor       : pointer;
+
+  &__text {
+    margin-left: 15px;
+  }
+
+  &__img {
+    height: 25px;
+    width : 25px;
+  }
+
+  &:hover,
+  &:focus {
+    &.whatsApp {
+      @include a-box-button(transparent, $green-10);
+
+      a {
+        color: $green-10 !important;
+      }
+    }
+
+    &.facebook {
+      @include a-box-button(transparent, $blue-10);
+
+      a {
+        color: $blue-10 !important;
+      }
+    }
+
+    &.linkedin {
+      @include a-box-button(transparent, $blue-20);
+
+      a {
+        color: $blue-20 !important;
+      }
+    }
+
+    &.medium {
+      @include a-box-button(transparent, $white);
+
+      a {
+        color: $white !important;
+      }
+    }
+
+  }
+
+
+}

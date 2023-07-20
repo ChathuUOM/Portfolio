@@ -1,0 +1,157 @@
+.home-wrapper {
+    background-color: $black;
+}
+
+.profile-pic {
+    height       : 300px;
+    width        : 300px;
+    border-radius: 50%;
+}
+
+.navbar-nav {
+    float: right;
+}
+
+.bg-dark {
+    background-color: $accent-dark !important;
+}
+
+.custom-card {
+    padding         : 30px;
+    background-color: $accent-dark;
+    box-shadow      : $shadow-10;
+    width           : 100%;
+    border-radius   : 8px;
+    text-align      : center;
+}
+
+.chip {
+    color           : $primary;
+    background-color: $black;
+    padding         : 2px 6px;
+    border-radius   : 8px;
+    margin          : 4px;
+    box-shadow      : $shadow-10;
+    width           : fit-content;
+    border          : 1px solid var(--primary);
+}
+
+.service-card {
+    @extend .custom-card;
+    margin-bottom: 20px;
+    padding-top  : 40px;
+
+    h3 {
+        margin-bottom: 15px;
+    }
+}
+
+.year-wrap {
+    background-color: $black;
+    padding         : 6px 10px;
+    border-radius   : 8px;
+    margin          : 4px;
+    box-shadow      : $shadow-10;
+    width           : fit-content;
+    border          : 1px solid var(--primary);
+}
+
+.company-logo {
+    height       : 100px;
+    width        : 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.journey {
+    .cards {
+        background-color: $accent-dark !important;
+    }
+}
+
+.light-bg {
+    .headline3-pri {
+        color: #e48c27 !important;
+    }
+}
+
+.project-img {
+    max-width    : 100%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+
+    &--scss {
+        filter: saturate(0.6);
+    }
+}
+
+.contact-row {
+    color        : $primary;
+    margin-bottom: 10px;
+
+    svg {
+        margin-right: 10px;
+    }
+}
+
+.mailto {
+    color: $primary !important;
+}
+
+.contact {
+    background-color: $accent-dark;
+
+    .container {
+        text-align: center;
+    }
+}
+
+.projects {
+    .row {
+        &:nth-child(even) {
+            background-color: $accent-dark;
+            border-radius   : 8px;
+        }
+    }
+}
+
+.contact-btn {
+    a {
+        color          : $primary;
+        text-decoration: none;
+    }
+}
+
+.to-top {
+    bottom       : 0;
+    cursor       : pointer;
+    margin       : 0 8px 8px 0;
+    position     : fixed;
+    right        : 0;
+    opacity      : 0;
+    padding      : 20px;
+    background   : $gray-50;
+    border       : 1px solid $black;
+    border-radius: 4px;
+    text-align   : center;
+    color        : $primary;
+}
+
+.show-scrollTop {
+    opacity   : 1 !important;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-item {
+    padding: 0px 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .contact-list {
+        display: grid;
+
+        .contact-btn {
+            margin-bottom: 10px;
+        }
+    }
+}
