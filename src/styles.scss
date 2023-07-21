@@ -9,15 +9,63 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body, html {
+body,
+html {
   scroll-behavior: smooth !important;
 }
 
 body {
-  color          : $text-on-surface;
-  background     : $backGround-light;
+  color     : $text-on-surface;
+  background: $backGround-light;
 }
 
 .pointer {
   cursor: pointer;
+}
+
+// Media Quaries
+
+@media screen and (max-width: 767px) {
+
+  .headline2-pri,
+  .headline2 {
+    font-size: 36px !important;
+  }
+
+  .headline3-pri,
+  .headline3 {
+    font-size: 30px !important;
+  }
+
+  .headline4-pri,
+  .headline4 {
+    font-size: 21px !important;
+  }
+
+  .headline5-pri,
+  .headline5 {
+    font-size: 11px !important;
+  }
+
+  .testimonial {
+    .carousel-item {
+      p {
+        font-size: 14px !important;
+      }
+
+      h4 {
+        font-size: 16px !important;
+      }
+
+      h6 {
+        font-size: 14px !important;
+      }
+    }
+  }
+
+  .projects {
+    .headline5 {
+      font-size: 16px !important;
+    }
+  }
 }
