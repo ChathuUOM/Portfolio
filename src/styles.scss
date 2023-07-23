@@ -69,3 +69,25 @@ body {
     }
   }
 }
+
+// Favicon style 
+link[rel="icon"] {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #000; /* You can set this to match your website's background color */
+}
+
+/* Hide the default browser favicon placeholder */
+// link[rel="icon"] {
+//   display: none;
+// }
+
+
+
+
+
+
+
