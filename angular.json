@@ -28,6 +28,7 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/fav.ico",
+              "src/fav1.ico",
               "src/assets"
             ],
             "styles": [
@@ -98,6 +99,7 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/fav.ico",
+              "src/fav1.ico",
               "src/assets"
             ],
             "styles": [
