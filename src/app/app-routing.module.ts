@@ -7,11 +7,13 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { ServicesComponent } from './components/services/services.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { TalentBaseComponent } from './components/projects/talent-base/talent-base.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '/home' },
   { path: 'home', component: HomeComponent },
   { path: 'timeline', component: TimelineComponent },
+  { path: 'talentBase', component: TalentBaseComponent },
   { path: '**', redirectTo: '/home' },
 ];
 
