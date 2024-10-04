@@ -2,9 +2,11 @@
  :root {
      --primary           : #e7bd8d;
      --surface           : #2d2d2d;
+     --secondary         : #A34F00;
      --backGround        : #383838;
      --backGroundLight   : #252429;
      --textOnPrimary     : #fbfbfbd1;
+     --textOnSecondary   : #ffffff;
      --textOnSurface     : #fbfbfbd1;
      --titleTextOnSurface: #fbfbfbd1;
      --fontFamily        : Roboto;
@@ -13,10 +15,12 @@
  // Variables For Theme-builder
 
  $primary                : var(--primary);
+ $secondary              : var(--secondary);
  $surface                : var(--surface);
  $background             : var(--backGround);
  $backGround-light       : var(--backGroundLight);
  $text-on-primary        : var(--textOnPrimary);
+ $text-on-secondary      : var(--textOnSecondary);
  $text-on-surface        : var(--textOnSurface);
  $primary-text-on-surface: var(--primary);
  $title-text-on-surface  : var(--titleTextOnSurface);

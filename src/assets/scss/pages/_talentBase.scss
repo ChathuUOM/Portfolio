@@ -1,0 +1,57 @@
+.summery {
+  background-color: $secondary;
+  border-radius: 8px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 100%;
+  color: $text-on-secondary;
+}
+
+.vr {
+  width: 6px;
+  border-radius: 24px;
+  background-color: white;
+  opacity: 0.87;
+}
+
+.box {
+  color: $primary;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 2px solid $primary; // Border color
+
+  .icon {
+    font-size: 40px; // Icon size
+    color: $primary;
+    margin-bottom: 10px;
+  }
+
+  .title {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: 600;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    color: $primary;
+  }
+}
+
+.link-text {
+  color: $text-on-secondary;
+  text-decoration: underline;
+
+  &:hover {
+    color: $text-on-secondary;
+    text-decoration: underline;
+  }
+}
